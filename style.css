@@ -1,0 +1,359 @@
+body{
+	font-family: 'Cinzel', serif;
+}
+
+
+.mdl-layout {
+  background-color:#24141F;
+  
+}
+
+.mdl-layout__header {
+  transition-property: max-height,box-shadow,background;
+}
+
+.mdl-layout__header.is-casting-shadow {
+  background: #3f51b5;
+}
+
+.mdl-layout__header,
+.mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+.history{
+	color: white; ;
+	position: absolute;
+	top: 600px;
+	left: 570px;
+	text-family: Lucida Console;
+}
+
+.mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url("https://www.getmdl.io/assets/demos/welcome_card.jpg") center/cover;
+}
+
+.mdl-card__menu {
+  color: #fff;
+}
+
+.is-focused .mdl-textfield__input {
+  border-color: #fff;
+}
+
+/* Drilling*/
+#animation {
+  margin: 200px 0 0 200px;
+  position: relative;
+  left: 300px;
+  
+  
+}
+#nail {
+  width: 40px;
+  height: 1px;
+  background: #2980b9;
+  transform: rotate(-30deg);
+  margin: -160px 0 0 320px;
+  position: absolute;
+}
+#nail2 {
+  width: 40px;
+  height: 1px;
+  background: #2980b9;
+  transform: rotate(30deg);
+  margin: -160px 0 0 354px;
+  position: absolute;
+}
+#nail3 {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #34495e;
+  margin: -171px 0 0 355px;
+  position: absolute;
+}
+#animation * {
+position: absolute;  
+}
+#animborder {
+  width: 290px;
+  height: 440px;
+  background: transparent;
+  z-index: 5;
+  margin: -150px 0 0 0;
+  border: 10px solid #95a5a6;
+}
+#sky {
+  width: 300px;
+  height: 150px;
+  background: #63c0ff;
+  margin-top: -150px;
+  z-index: -5;
+}
+#wheel1 {
+  width: 20px;
+  height: 30px;
+  border-radius: 30%;
+  background: #3c3d3d;
+  margin: -30px 0 0 120px;
+}
+#wheel2 {
+  width: 20px;
+  height: 30px;
+  border-radius: 30%;
+  background: #3c3d3d;
+  margin: -30px 0 0 170px;
+}
+#machine1 {
+  background: #f39c12;
+  width: 70px;
+  height: 20px;
+  margin: -35px 0 0 120px;
+  z-index: 2;
+}
+#machine2 {
+  background: #27ae60;
+  width: 70px;
+  height: 20px;
+  margin: -55px 0 0 120px;
+  z-index: 2;
+  border-radius: 6px 6px 0 0;
+}
+#crane1 {
+  background: #d35400;
+  width: 50px;
+  height: 7px;
+  margin: -7px 0 0 130px;
+  border-radius: 6px 6px 0 0; 
+  z-index: 4;
+}
+#crane2 {
+  background: #d35400;
+  width: 5px;
+  height: 150px;
+  margin: -150px 0 0 135px;
+  z-index: 4;
+}
+#crane3 {
+  background: #d35400;
+  width: 5px;
+  height: 150px;
+  margin: -150px 0 0 170px;
+  z-index: 4;
+}
+#crane4 {
+  width: 40px;
+  height: 150px;
+  margin: -150px 0 0 135px;
+  z-index: 4;
+  background-image: repeating-linear-gradient(70deg, transparent, transparent 12px, #d35400 12px, #d35400 19px);
+}
+#blink {
+  width: 5px;
+  height: 8px;
+  margin: -63px 0 0 125px;
+  border-radius: 50% 50% 0 0;
+  animation: blink .8s linear infinite;
+}
+@keyframes blink {
+  0% {background-color: #ff3600;}
+  50% {background-color: #fcb754;}
+  100% {background-color: #ff3600;}
+}
+#blinkpulse {
+  border: 1px solid #ff6565;
+  margin: -63px 0 0 126px;
+  border-radius: 100%;
+  border-color: #ff6565 #ff6565 transparent transparent;
+  transform: rotate(-45deg);
+  animation: blinkpulse .3s linear infinite;
+}
+@keyframes blinkpulse {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 1;
+  }
+  60% {
+  opacity: 1;
+  }
+  100% {
+    width: 14px;
+    height: 14px;
+    left: -7px;
+    margin-top: -69px;
+    opacity: 0;
+  }
+}
+#green {
+  width: 300px;
+  height: 3px;
+  background: #27ae60;
+}
+#soil {
+ width: 300px;
+  height: 300px;
+  background: #233140;
+  z-index: -3;
+}
+#soilmove {
+  width: 40px;
+  height: 200px;
+  background: #2c3a49;
+  margin: 0 0 0 135px;
+}
+#drilling {
+  width: 30px;
+  height: 210px;
+  margin: -10px 0 0 140px;
+  background-image: repeating-linear-gradient(-55deg, transparent, transparent 12px, #192a3c 12px, #192a3c 19px);
+  animation: drilling linear 2.5s infinite;
+}
+#drillingmiddle {
+  width: 15px;
+  height: 210px;
+  background: #192a3c;
+  margin: -10px 0 0 147px;
+}
+#arrowhead {
+  width: 5px;
+  height: 0;
+  border-top: 10px solid #192a3c;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin: 200px 0 0 147px;
+}
+#drillhead {
+  width: 30px;
+  height: 10px;
+  background: #192a3c;
+  margin: -20px 0 0 140px;
+}
+@keyframes drilling {
+  0% {background-position-y: 0px;}
+  100% {background-position-y: 700px;}
+}
+#drill {
+  animation: drillmove linear 1.5s infinite;
+  z-index: 3;
+}
+@keyframes drillmove {
+  0% {top: -20px;}
+  50% {top: -4px;}
+  100% {top: -20px;}
+}
+#water {
+  width: 300px;
+  height: 40px;
+  background: #3498db;
+  margin: 200px 0 0 0;
+  z-index: -1;
+}
+#water1 {
+  width: 180px;
+  height: 0px;
+  background: transparent;
+  border: 20px solid #3498db;
+  border-radius: 0 100% 0 0;
+  margin: 185px 0 0 0;
+}
+#water2 {
+  width: 118px;
+  height: 0px;
+  background: transparent;
+  border: 5px solid #233140;
+  border-radius: 0 0 0 100%;
+  margin: 198px 0 0 172px;
+}
+#water3 {
+  width: 145px;
+  height: 0px;
+  background: transparent;
+  border: 10px solid #233140;
+  border-radius: 0 100% 0 0;
+  margin: 225px 0 0 0;
+}
+#water4 {
+  width: 135px;
+  height: 0px;
+  background: transparent;
+  border: 5px solid #3498db;
+  border-radius: 0 0 0 100%;
+  margin: 237px 0 0 155px;
+}
+#cloud1 {
+  background: #ecf0f1;
+  width: 20px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 0 0 0 3px;
+}
+#cloud2 {
+  background: #ecf0f1;
+  width: 20px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 10px 0 0 0;
+}
+#cloud3 {
+  background: #ecf0f1;
+  width: 30px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 13px 0 0 10px;
+}
+#cloud4 {
+  background: #ecf0f1;
+  width: 20px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 9px 0 0 30px;
+}
+#cloud5 {
+  background: #ecf0f1;
+  width: 25px;
+  height: 20px;
+  border-radius: 100%;
+  margin: 0px 0 0 18px;
+}
+#cloud {
+  width: 80px;
+  height: 40px;
+  margin: -120px 0 0 30px;
+  animation: cloudmove 6s linear infinite;
+}
+@keyframes cloudmove {
+  0% {
+    margin: -120px 0 0 30px;
+    opacity: 0;
+  }
+  15% {
+    margin: -115px 0 0 50px;
+    opacity: 1;
+  }
+  30% {
+    margin: -125px 0 0 90px;
+    opacity: 0.8;
+  }
+  45% {
+    margin: -115px 0 0 140px;
+    opacity: 1;
+  }
+  70% {
+    margin: -120px 0 0 180px;
+    opacity: 0.7;
+  }
+  90% {
+    margin: -130px 0 0 230px;
+    opacity: 0.9;
+  }
+   100%{
+    margin: -115px 0 0 220px;
+    opacity: 0;
+  }
+}
+/*EDDING DRILLING*/
